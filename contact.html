@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contact</title>
     <style>
-        .from-a{
+        .form-a{
             background-color: white;
-            width: 500px;
+            width: 300px;
             height: fit-content;
             border: 1px solid gray;
             border-collapse: collapse;
-        
+            border-radius: 8px ;
+            margin: 8px;
+            padding: 30px;
         }
 
 
@@ -26,30 +28,41 @@
     </div>
     <hr />
     <h1>Contact Me</h1>
-    <form name="from1" class="from-a"> Enter your info.
-        <br />
-       <label for="fname">Your Name</label>  <br />
-        <input type="text" id="fname" name="fname" size="20">
-        <br />
-        
-        Your e-mail <br />
-        <input type="text" id="fmail" name="fmail" size="20">
-        <br />
-        
-        Gender <br />
-        <select id="gender" name="gender">
-            <option value="Male"> Male</option>
-            <option value="Female"> Female</option>
-            <option value="-"> - </option>            
-        </select> 
-        <br />
 
-        <label for="fMessage">Message </label> <br />
-        <textarea id="fMessage" name="fMessage" rows="4" cols="50">
-            xxxx
-            </textarea> <br />
-            <button id="submit" >submit</button>
-            <button id="clear" >clear</button>
+    <Form class="form-a" action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+        Enter your info..
+        <br />
+        <div>
+            <label for="name" >Your Name :</label><br>
+            <input type="text"  id="name" name="name" style="width: 80%;">
+        </div><br>
+        <label for="email">Your Email : <br>
+            <input type="email" id="email" name="email" style="width: 80%;">
+        </label>
+        <br> <br>
+        <div>
+            <label for="gender">Gender : <br>
+                <select id="gender" name="gender" style="width: 80%;">
+                    <option value="" selected disabled>--select--</option>
+                    <!-- selected = default value -->
+                    <option value="Male"> Male</option>
+                    <option value="Female"> Female</option>
+                    <option value="other"> Other </option>   
+                </select>
+            </label>
+        </div>
+        <br> 
+        <div>
+            <label for="fMessage">Message </label> <br />
+            <textarea id="fMessage" name="fMessage" rows="5" cols="35">
+            </textarea> 
+
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Send">   
+            <input type="reset" value="Clear"> 
+        </div> 
     </form>
 </body>
 </html>
