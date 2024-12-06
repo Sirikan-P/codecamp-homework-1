@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <style>
+        .from-a{
+            background-color: white;
+            width: 500px;
+            height: fit-content;
+            border: 1px solid gray;
+            border-collapse: collapse;
+        
+        }
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <a href="./index.html">Home</a> |
+        <a href="./education.html">Education</a> |
+        <a href="./work.html">Work Experience</a> |
+        <a href="./contact.html">Contact</a> |
+    </div>
+    <hr />
+    <h1>Contact Me</h1>
+    <form name="from1" class="from-a"> Enter your info.
+        <br />
+       <label for="fname">Your Name</label>  <br />
+        <input type="text" id="fname" name="fname" size="20">
+        <br />
+        
+        Your e-mail <br />
+        <input type="text" id="fmail" name="fmail" size="20">
+        <br />
+        
+        Gender <br />
+        <select id="gender" name="gender">
+            <option value="Male"> Male</option>
+            <option value="Female"> Female</option>
+            <option value="-"> - </option>            
+        </select> 
+        <br />
+
+        <label for="fMessage">Message </label> <br />
+        <textarea id="fMessage" name="fMessage" rows="4" cols="50">
+            xxxx
+            </textarea> <br />
+            <button id="submit" >submit</button>
+            <button id="clear" >clear</button>
+    </form>
+</body>
+</html>
